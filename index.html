@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator | Make Your Life Easy</title>
+    <link rel = "stylesheet" href = "./css/style.css"/>
+    <link rel = "stylesheet" media="screen and (max-width: 900px)" href="./css/phone.css">
+</head>
+<body>
+    <section id="main">
+        <div class="main-container">
+                <div class="title">
+                    
+                    <h1>Bill Calculator</h1>
+                </div>
+                <div class="main-item">
+                <h3>Bill Total</h3>
+                <input type="text" onkeyup = "calculateBill()"placeholder="Enter Total of the bill" id = "billTotal">
+                <h3>Tips</h3>
+                <input type="text" onkeyup = "calculateBill()" placeholder="10" id = "tipInput">
+            </div>
+            <div class="result">
+                <div class = "people-container">
+                    <h3>People</h3>
+                    <div class = "peoplecount">
+                        <button onclick="increase()">+</button><h2 id = "people">1</h2><button onclick="decrease()">-</button>
+                    </div>
+                </div>
+                <div class = "showresult">
+                    <h3>Total:</h3>
+                    <span id="totalResult">0</span>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

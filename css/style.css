@@ -1,0 +1,71 @@
+*{
+    background-color: #121212 ;
+    font-family: monospace;
+}
+:root{
+    --main-color: #BB86FC;
+}
+#main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+}
+#main .main-container{
+    width: 40%;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container .title{
+    border-bottom: 1px solid var(--main-color);
+}
+.main-container h1{
+    font-size: 2rem;
+}
+
+#main .main-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 90%;
+}
+.main-item input{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+}
+.result{
+    margin: 5px 0px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+.result button{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    height: 25px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+.people-container{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.people-container .peoplecount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showresult{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
